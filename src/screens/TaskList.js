@@ -119,18 +119,18 @@ class TaskList extends React.Component {
 
     getImage = () => {
         switch(this.props.daysAhead){
-            case 0: return todayImage
-            case 1: return tomorrowImage
-            case 7: return weekImage
+            case 1: return todayImage
+            case 2: return tomorrowImage
+            case 8: return weekImage
             default: return monthImage
         }
     }
 
     getColor = () => {
         switch(this.props.daysAhead){
-            case 0: return commonStyles.colors.today
-            case 1: return commonStyles.colors.tomorrow
-            case 7: return commonStyles.colors.week
+            case 1: return commonStyles.colors.today
+            case 2: return commonStyles.colors.tomorrow
+            case 8: return commonStyles.colors.week
             default: return commonStyles.colors.month
         }
     }
